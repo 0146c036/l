@@ -1,3 +1,12 @@
+from flask import Flask
+from render_routes import render_bp
+
+# 建立一個臨時 app 物件先將路由綁定，確保 Render 測試與 LINE 驗證暢通
+app = Flask(__name__)
+app.register_blueprint(render_bp)
+
+
+
 import os
 import json
 import hmac
