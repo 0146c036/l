@@ -171,13 +171,12 @@ def webhook():
                         
     @app.route("/", methods=["GET", "HEAD"])
 def index():
-    # 這是給 Render 測試用的根目錄，回傳 200 讓平台知道網頁活著
     return "Hello, Meeting Reminder System is running!", 200
 
 @app.route("/callback", methods=["POST"])
 def callback():
-    # 這是給 LINE Webhook 接收訊號用的入口
     return "OK", 200
+
 
 
 if __name__ == "__main__":
