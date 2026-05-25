@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# Database
+reminders.db
+
+# Logs
+*.log
+app.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Google OAuth tokens
+token.json
+credentials.json
